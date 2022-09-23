@@ -2,7 +2,7 @@ import { TNetworkInfo } from 'eth-hooks/models';
 
 import { TNetworkNamesList } from '~common/models';
 
-const INFURA_ID = process.env.VITE_RPC_MAINNET_INFURA;
+const INFURA_ID = process.env.VITE_RPC_MAINNET_INFURA || process.env.NEXT_PUBLIC_KEY_INFURA;
 
 let hostname = 'localhost';
 if (typeof window !== 'undefined' && window != null) {
